@@ -1,0 +1,371 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* HEADER */
+header {
+  background: #370303;
+  border-bottom: 1px solid #370303;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+header nav {
+  margin-top: 45px;
+}
+
+.wave-container {
+  background-color: #e7d49e;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-container svg {
+  width: 100%;
+  height: 130px;
+  display: block;
+  transform: scaleY(-1); /* INVERTE VERTICALMENTE */
+}
+
+.logo img {
+  height: 200px;
+  width: auto;
+  margin-top: 45px;
+}
+
+
+nav a {
+  margin-left: 24px;;
+  font-weight: 500;
+  color: #e7d49e;
+  transition: color 0.3s;;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  margin-left: 16px;
+  margin-top: 45px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* A parte visível do botão */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 32px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Quando marcado, move o círculo */
+input:checked + .slider {
+  background-color: #1f1f1f;
+}
+
+input:checked + .slider:before {
+  transform: translateX(28px);
+}
+
+/* HERO */
+.hero {
+  background: #e7d49e;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.wave-container-hero {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-container-hero svg {
+  width: 100%;
+  height: 130px;
+  display: block;
+  transform: scaleY(-1); /* INVERTE VERTICALMENTE */
+}
+
+.btn {
+  background: #370303;
+  color: #e7d49e;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffffff;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+}
+
+.bg-light {
+  background: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #e7d49e;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+/* SOBRE */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+/* FOOTER */
+footer {
+  background: #370303;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.footer h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: white;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
+  color: #c0d3f5;
+  margin-top: 30px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #f5e5e5;
+  color: #f0f0f0;
+}
+
+body.dark-mode a {
+  color: #bbbbbb;
+}
+
+body.dark-mode header {
+  background-color: #231305;
+  border-bottom: 1px solid #231305;
+}
+
+body.dark-mode .header {
+  background-color: #231305;
+}
+
+body.dark-mode header nav {
+  margin-top: 45px; /* mantido */
+}
+
+body.dark-mode .wave-container {
+  background-color: #6b6666;
+}
+
+body.dark-mode .wave-container path {
+  fill: #231305;
+}
+
+body.dark-mode .wave-container-hero {
+  background-color: #6b6666;
+}
+
+body.dark-mode nav a {
+  color: #f0f0f0;
+}
+
+body.dark-mode nav a:hover {
+  color: #e7d49e; /* cor mais viva no hover */
+}
+
+body.dark-mode .hero {
+  background-color: #6b6666;
+  color: #f0f0f0;
+}
+
+body.dark-mode .btn {
+  background-color: #4a1f1f;
+  color: #e7d49e;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #6b2b2b;
+  color: #fff;
+}
+
+body.dark-mode .section {
+  background-color: #181818;
+}
+
+body.dark-mode .bg-light {
+  background-color: #222;
+}
+
+body.dark-mode .section-title {
+  color: #f0f0f0;
+}
+
+body.dark-mode .card {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #eee;
+}
+
+body.dark-mode .card:hover {
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .card h3 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .about-text {
+  color: #ccc;
+}
+
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
+
+body.dark-mode .footer a {
+  color: #bbb;
+}
+
+body.dark-mode .footer a:hover {
+  text-decoration: underline;
+  color: #e7d49e;
+}
+
+body.dark-mode .footer-copy {
+  color: #888;
+}
