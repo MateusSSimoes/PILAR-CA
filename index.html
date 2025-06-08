@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PilarConsultoria</title>
   <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
 </head>
-<body>
+
+
+<body id="início">
+  
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 <!-- HEADER -->
   <header>
     <div class="container header">
-      <div class="logo">
-  <img src="/src/Logo.png" alt="Logo da empresa" />
-</div>
+      <a href="#início" class="logo">
+        <img src="/src/Logo.png" alt="Logo da empresa" />
 
       <nav>
-        <a href="#">INÍCIO</a>
-        <a href="#">SOBRE</a>
-        <a href="#">QUEM SOMOS</a>
-        <a href="#">SERVIÇOS</a>
-        <a href="#">FALE CONOSCO</a>
+  <a href="#inicio">INÍCIO</a>
+  <a href="#sobre">SOBRE</a>
+  <a href="#quem-somos">QUEM SOMOS</a>
+  <a href="#servicos">SERVIÇOS</a>
+  <a href="#fale-conosco">FALE CONOSCO</a>
       </nav>
-
 
 <!-- DARK MODE TOGGLE -->
       <label class="switch">
@@ -36,8 +43,7 @@
 <!-- WAVE EFFECT -->
  <div class="wave-container">
   <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#370303" fill-opacity="1"
-      d="M1440,70 C1080,50 360,300 0,160 L0,320 L1440,320 Z">
+    <path d="M1440,70 C1080,50 360,300 0,160 L0,320 L1440,320 Z">
     </path>
   </svg>
 </div>
@@ -46,14 +52,13 @@
   <section class="hero">
     <h1>O MELHOR JEITO DE EXPANDIR SUA MARCA</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum dignissimos distinctio corrupti architecto dolorum! Vel, iusto sunt sint modi expedita tempora quam omnis reiciendis alias temporibus, culpa molestias cupiditate non?</p>
-    <a href="#" class="btn">Fale com um especialista</a>
+    <a href="#fale-conosco" class="btn">Fale com um especialista</a>
   </section>
 
   <!-- WAVE EFFECT -->
   <div class="wave-container-hero">
   <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#e7d49e" fill-opacity="1"
-      d="M1440,70 C1080,50 360,300 0,160 L0,320 L1440,320 Z">
+    <path d="M1440,70 C1080,50 360,300 0,160 L0,320 L1440,320 Z">
     </path>
   </svg>
 </div>
@@ -77,13 +82,238 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section class="section bg-light">
+<!-- SOBRE -->
+  <section class="section" id="sobre">
     <div class="container">
-      <h2 class="section-title">???</h2>
-      <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dicta similique esse, architecto eius voluptatum sequi iste deleniti ratione minima labore qui sunt earum. Illo blanditiis pariatur sed ipsa impedit.</p>
+      <h2 class="section-title">Sobre</h2>
+      <p class="about-text">
+        A Pilar Consultoria é uma empresa especializada em soluções estratégicas de marketing, branding e inovação. Nossa missão é ajudar empresas a se destacarem no mercado por meio de ações inteligentes, criativas e direcionadas. Atuamos com foco no crescimento sustentável de marcas, oferecendo uma abordagem personalizada e baseada em resultados.
+      </p>
     </div>
   </section>
+
+    <!-- QUEM SOMOS -->
+  <section class="section bg-light" id="quem-somos">
+    <div class="container">
+      <h2 class="section-title">Quem Somos</h2>
+      <p class="about-text">
+        Somos uma equipe multidisciplinar de especialistas apaixonados por inovação, design e comunicação. Com anos de experiência no mercado, unimos criatividade e estratégia para oferecer as melhores soluções aos nossos clientes. Acreditamos na força das conexões humanas e na construção de marcas autênticas.
+      </p>
+
+      <!-- EQUIPE -->
+       <h2 class="section-title-1">Nossa Equipe</h2>
+
+      <div class="team-container">
+
+  <div class="team-card">
+    <div class="photo-wrapper">
+      <img
+        src="https://randomuser.me/api/portraits/women/68.jpg"
+        alt="Ana Lice"
+        class="team-photo"
+      />
+      <span class="photo-border"></span>
+    </div>
+    <div class="team-info">
+      <h3 class="team-name">Ana Lice</h3>
+      <p class="team-role">Gerente de Projetos</p>
+      <p class="team-desc collapsed">
+        Responsável por coordenar equipes e garantir entregas dentro do prazo e qualidade.
+        <span class="more-text"> Coordena reuniões, resolve conflitos e mantém a equipe motivada para alcançar os objetivos da empresa.</span>
+      </p>
+      <button class="toggle-desc" aria-label="Ver mais Ana Silva">Ver mais</button>
+      <div class="team-socials">
+        <a href="#" aria-label="LinkedIn Ana Silva" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="E-mail Ana Silva" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="photo-wrapper">
+      <img
+        src="https://randomuser.me/api/portraits/men/45.jpg"
+        alt="Maria Eduarda"
+        class="team-photo"
+      />
+      <span class="photo-border"></span>
+    </div>
+    <div class="team-info">
+      <h3 class="team-name">Maria Eduarda</h3>
+      <p class="team-role">Desenvolvedor Front-end</p>
+      <p class="team-desc collapsed">
+        Especialista em interfaces responsivas e usabilidade.
+        <span class="more-text"> Apaixonado por tecnologia, trabalha com React e Vue, sempre buscando as melhores práticas de desenvolvimento e acessibilidade.</span>
+      </p>
+      <button class="toggle-desc" aria-label="Ver mais João Pereira">Ver mais</button>
+      <div class="team-socials">
+        <a href="#" aria-label="LinkedIn João Pereira" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub João Pereira" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="photo-wrapper">
+      <img
+        src="https://randomuser.me/api/portraits/women/12.jpg"
+        alt="Mateus Simões"
+        class="team-photo"
+      />
+      <span class="photo-border"></span>
+    </div>
+    <div class="team-info">
+      <h3 class="team-name">Mateus Simões</h3>
+      <p class="team-role">Analista de Marketing</p>
+      <p class="team-desc collapsed">
+        Cria campanhas digitais e monitora resultados.
+        <span class="more-text"> Experiente em SEO, Google Ads e mídias sociais para aumentar o engajamento e conversão.</span>
+      </p>
+      <button class="toggle-desc" aria-label="Ver mais Maria Costa">Ver mais</button>
+      <div class="team-socials">
+        <a href="#" aria-label="LinkedIn Maria Costa" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram Maria Costa" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="photo-wrapper">
+      <img
+        src="https://randomuser.me/api/portraits/women/12.jpg"
+        alt="Tainá "
+        class="team-photo"
+      />
+      <span class="photo-border"></span>
+    </div>
+    <div class="team-info">
+      <h3 class="team-name">Tainá</h3>
+      <p class="team-role">Analista de Marketing</p>
+      <p class="team-desc collapsed">
+        Cria campanhas digitais e monitora resultados.
+        <span class="more-text"> Experiente em SEO, Google Ads e mídias sociais para aumentar o engajamento e conversão.</span>
+      </p>
+      <button class="toggle-desc" aria-label="Ver mais Maria Costa">Ver mais</button>
+      <div class="team-socials">
+        <a href="#" aria-label="LinkedIn Maria Costa" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram Maria Costa" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="photo-wrapper">
+      <img
+        src="https://randomuser.me/api/portraits/men/30.jpg"
+        alt="Thaynara"
+        class="team-photo"
+      />
+      <span class="photo-border"></span>
+    </div>
+    <div class="team-info">
+      <h3 class="team-name">Thaynara</h3>
+      <p class="team-role">Designer UI/UX</p>
+      <p class="team-desc collapsed">
+        Foca em experiência do usuário e design intuitivo.
+        <span class="more-text"> Trabalha com prototipagem, wireframes e testes de usabilidade para criar interfaces eficazes e atraentes.</span>
+      </p>
+      <button class="toggle-desc" aria-label="Ver mais Pedro Alves">Ver mais</button>
+      <div class="team-socials">
+        <a href="#" aria-label="LinkedIn Pedro Alves" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Behance Pedro Alves" data-tooltip="Behance"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </section>
+
+   <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <h2 class="section-title">Serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consultoria de Marca</h3>
+          <p>Auxiliamos empresas na construção e posicionamento estratégico de suas marcas, promovendo diferenciação no mercado.</p>
+        </div>
+        <div class="card">
+          <h3>Marketing Digital</h3>
+          <p>Planejamos e executamos campanhas digitais que geram resultados reais, utilizando SEO, mídias sociais e tráfego pago.</p>
+        </div>
+        <div class="card">
+          <h3>Design e Identidade Visual</h3>
+          <p>Desenvolvemos logotipos, materiais gráficos e toda a identidade visual da sua marca com estética e propósito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FALE CONOSCO -->
+  <section class="contact-section">
+  <h2 class="section-title">Fale Conosco</h2>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Informações de Contato</h3>
+      <p><i class="fas fa-phone-alt"></i> (11) 98765-4321</p>
+      <p><i class="fas fa-envelope"></i> contato@empresa.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - São Paulo, SP</p>
+      <div class="map-wrapper">
+        <iframe
+          title="Localização"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5337808754145!2d-46.63955768444453!3d-23.58803138466209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b8e40e9795%3A0xd734c1e4e9997fbd!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000"
+          width="100%"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <label>
+        Nome completo
+        <input type="text" id="name" name="name" required />
+        <span class="error-msg" id="error-name"></span>
+      </label>
+
+      <label>
+        E-mail
+        <input type="email" id="email" name="email" required />
+        <span class="error-msg" id="error-email"></span>
+      </label>
+
+      <label>
+        Assunto
+        <input type="text" id="subject" name="subject" />
+      </label>
+
+      <label>
+        Mensagem
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error-msg" id="error-message"></span>
+      </label>
+
+      <button type="submit">
+        <i class="fas fa-paper-plane"></i> Enviar mensagem
+      </button>
+
+      <p class="form-success" id="formSuccess">Mensagem enviada com sucesso!</p>
+    </form>
+  </div>
+</section>
+
+<!--CONFIRMAÇÃO DE ENVIO-->
+<div id="confirmationModal" class="modal-overlay">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close-button" id="closeModal" aria-label="Fechar modal">&times;</button>
+    <h2 id="modalTitle">Mensagem enviada!</h2>
+    <p>Obrigado por entrar em contato. Retornaremos o mais breve possível.</p>
+    <button class="modal-btn" id="confirmBtn">OK</button>
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer>
@@ -105,7 +335,7 @@
         <p>contato@minhaempresa.com<br/>+55 (11) 99999-9999</p>
       </div>
     </div>
-    <div class="footer-copy">© 2025 MinhaEmpresa. Todos os direitos reservados.</div>
+    <div class="footer-copy">© 2025 Pilar. Todos os direitos reservados.</div>
   </footer>
 
 
