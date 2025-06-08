@@ -13,9 +13,9 @@
   
 
   <!-- FONTES -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
 <!-- HEADER -->
   <header>
@@ -24,7 +24,7 @@
         <img src="/src/Logo.png" alt="Logo da empresa" />
 
       <nav>
-  <a href="#inicio">INÍCIO</a>
+  <a href="#início">INÍCIO</a>
   <a href="#sobre">SOBRE</a>
   <a href="#quem-somos">QUEM SOMOS</a>
   <a href="#servicos">SERVIÇOS</a>
@@ -63,31 +63,26 @@
   </svg>
 </div>
 
-  <!-- SOLUÇÕES -->
-  <section class="section">
-    <h2 class="section-title">Nossas Soluções</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum ea accusantium consequatur soluta, nisi porro quibusdam inventore sed a! Error atque ea quasi, perferendis iste perspiciatis quos veritatis et.</p>
-      </div>
-      <div class="card">
-        <h3>2</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, hic. Illo sequi ut quidem voluptas atque commodi! Corporis molestiae doloremque iure laudantium aliquam. Velit vel molestiae magnam unde cupiditate quas!</p>
-      </div>
-      <div class="card">
-        <h3>3</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis itaque assumenda possimus. Odio ad libero molestiae, modi excepturi, aut sit qui delectus provident nesciunt tempora iste! A, explicabo ipsa?</p>
-      </div>
-    </div>
-  </section>
+<!-- WAVE EFFECT 2 -->
+  <div class="wave-container-hero-2">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path d="M1440,70 C1080,50 360,300 0,160 L0,320 L1440,320 Z">
+    </path>
+  </svg>
+</div>
 
 <!-- SOBRE -->
   <section class="section" id="sobre">
     <div class="container">
       <h2 class="section-title">Sobre</h2>
       <p class="about-text">
-        A Pilar Consultoria é uma empresa especializada em soluções estratégicas de marketing, branding e inovação. Nossa missão é ajudar empresas a se destacarem no mercado por meio de ações inteligentes, criativas e direcionadas. Atuamos com foco no crescimento sustentável de marcas, oferecendo uma abordagem personalizada e baseada em resultados.
+        Na Pilar Consultoria, somos especialistas em estratégias de marketing, branding e inovação. Nossa missão é impulsionar o crescimento de marcas por meio de soluções criativas, inteligentes e orientadas por resultados.
+
+Trabalhamos lado a lado com cada cliente, oferecendo uma abordagem personalizada que valoriza a identidade de cada negócio. Nosso foco está no desenvolvimento sustentável e no posicionamento estratégico de marcas que desejam se destacar em um mercado cada vez mais competitivo.
+
+Acreditamos que grandes resultados nascem de boas ideias bem executadas, por isso, unimos planejamento, criatividade e análise para entregar soluções que realmente fazem a diferença.
+
+
       </p>
     </div>
   </section>
@@ -101,7 +96,7 @@
       </p>
 
       <!-- EQUIPE -->
-       <h2 class="section-title-1">Nossa Equipe</h2>
+       <h2 class="section-title-1">Conheça nossa equipe</h2>
 
       <div class="team-container">
 
@@ -228,41 +223,83 @@
     </div>
   </section>
 
+  
    <!-- SERVIÇOS -->
-  <section class="section" id="servicos">
-    <div class="container">
-      <h2 class="section-title">Serviços</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Consultoria de Marca</h3>
-          <p>Auxiliamos empresas na construção e posicionamento estratégico de suas marcas, promovendo diferenciação no mercado.</p>
-        </div>
-        <div class="card">
-          <h3>Marketing Digital</h3>
-          <p>Planejamos e executamos campanhas digitais que geram resultados reais, utilizando SEO, mídias sociais e tráfego pago.</p>
-        </div>
-        <div class="card">
-          <h3>Design e Identidade Visual</h3>
-          <p>Desenvolvemos logotipos, materiais gráficos e toda a identidade visual da sua marca com estética e propósito.</p>
-        </div>
+<section class="servicos-container">
+  <h2 class="titulo-servicos">Nossos Serviços</h2>
+  <div class="servicos-flex">
+
+    <div class="servico-card">
+      <img src="src/training_6429204.png" alt="Consultoria Estratégica">
+      <div class="texto-servico">
+        <h3>Consultoria Estratégica</h3>
+        <p>Planejamento e direcionamento para negócios inclusivos e sustentáveis, com foco em resultados reais.</p>
+        <button class="btn-mais-info" data-servico="consultoria">Saiba mais</button>
       </div>
     </div>
-  </section>
+
+    <div class="servico-card">
+      <img src="src/solution_1087818.png" alt="Identidade Visual Acessível">
+      <div class="texto-servico">
+        <h3>Identidade Visual Acessível</h3>
+        <p>Criação de marcas com contraste adequado, tipografia legível e versões inclusivas para todos os públicos.</p>
+        <button class="btn-mais-info" data-servico="identidade">Saiba mais</button>
+      </div>
+    </div>
+
+    <div class="servico-card">
+      <img src="src/online-presence_8899592.png" alt="Adaptação de Sites">
+      <div class="texto-servico">
+        <h3>Adaptação de Sites</h3>
+        <p>Transformamos sua presença digital para atender às normas de acessibilidade e melhorar a experiência do usuário.</p>
+        <button class="btn-mais-info" data-servico="sites">Saiba mais</button>
+      </div>
+    </div>
+
+    <div class="servico-card">
+      <img src="src/branding_1087800.png" alt="Manual de Identidade Visual">
+      <div class="texto-servico">
+        <h3>Manual de Identidade Visual</h3>
+        <p>Desenvolvemos o Manual de Identidade Visual (MIV) com base nos valores e na personalidade da sua marca.</p>
+        <button class="btn-mais-info" data-servico="manual">Saiba mais</button>
+      </div>
+    </div>
+
+    <div class="servico-card">
+      <img src="src/social-media_8644426.png" alt="Gerenciamento de Redes Sociais">
+      <div class="texto-servico">
+        <h3>Gerenciamento de Redes Sociais</h3>
+        <p>Gerenciamos as redes sociais da sua marca com estratégia, identidade visual alinhada e conteúdo acessível para ampliar seu alcance.</p>
+        <button class="btn-mais-info" data-servico="redes">Saiba mais</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Flutuante -->
+  <div id="modal-servico" class="modal-servico" style="display:none;">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+</section>
+
 
 <!-- FALE CONOSCO -->
-  <section class="contact-section">
+  <section class="contact-section" id="fale-conosco">
   <h2 class="section-title">Fale Conosco</h2>
 
   <div class="contact-container">
     <div class="contact-info">
       <h3>Informações de Contato</h3>
-      <p><i class="fas fa-phone-alt"></i> (11) 98765-4321</p>
-      <p><i class="fas fa-envelope"></i> contato@empresa.com</p>
-      <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - São Paulo, SP</p>
+      <p><i class="fas fa-phone-alt"></i> (11) ?????-????</p>
+      <p><i class="fas fa-envelope"></i> pilar.consultoria.assessoria@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Rua Luís Baldinato, 09 - Jardim Sonia Regina, São Paulo</p>
       <div class="map-wrapper">
         <iframe
           title="Localização"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5337808754145!2d-46.63955768444453!3d-23.58803138466209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b8e40e9795%3A0xd734c1e4e9997fbd!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d258.18479116503204!2d-46.76875607074414!3d-23.68357517542973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce524771f150b3%3A0x66de3be3716378cb!2sSociedade%20Santos%20M%C3%A1rtires!5e0!3m2!1spt-BR!2sbr!4v1749390847342!5m2!1spt-BR!2sbr"
           width="100%"
           height="200"
           style="border:0;"
@@ -305,24 +342,34 @@
   </div>
 </section>
 
+  <button id="btnVoltarTopo" aria-label="Voltar ao início do site">⭡ Voltar ao Início</button>
+
+<!-- WAVE EFFECT -->
+ <div class="wave-container-footer">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path d="M1440,70 C1080,50 360,300 0,160 L0,320 L1440,320 Z">
+    </path>
+  </svg>
+</div>
+
   <!-- FOOTER -->
   <footer>
     <div class="container footer">
       <div>
-        <h4>MinhaEmpresa</h4>
-        <p>Transformando negócios com tecnologia inteligente.</p>
+        <h4>Pilar</h4>
+        <p>A base do seu sucesso.</p>
       </div>
       <div>
         <h4>Links</h4>
         <ul>
-          <li><a href="#">Soluções</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">INSTAGRAM</a></li>
+          <li><a href="#">LINKTREE</a></li>
+          <li><a href="#">GITHUB</a></li>
         </ul>
       </div>
       <div>
         <h4>Contato</h4>
-        <p>contato@minhaempresa.com<br/>+55 (11) 99999-9999</p>
+        <p>pilar.consultoria.assessoria<br/>+55 (11) 99999-9999</p>
       </div>
     </div>
     <div class="footer-copy">© 2025 Pilar. Todos os direitos reservados.</div>

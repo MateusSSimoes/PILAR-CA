@@ -105,3 +105,70 @@ function validateEmail(email) {
   const regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
   return regex.test(email);
 }
+
+
+// Função para rolar suavemente para o topo
+const btnVoltarTopo = document.getElementById('btnVoltarTopo');
+
+// Mostrar botão após rolar 300px para baixo
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    btnVoltarTopo.style.display = 'block';
+  } else {
+    btnVoltarTopo.style.display = 'none';
+  }
+});
+
+// Ao clicar, rolar suavemente para o topo
+btnVoltarTopo.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+ // Conteúdo detalhado de cada serviço
+  const servicosDetalhes = {
+    consultoria: `
+      <h3>Consultoria Estratégica</h3>
+      <p>Oferecemos análise de mercado, definição de metas, planejamento estratégico e acompanhamento personalizado. Nosso objetivo é potencializar o crescimento do seu negócio, promovendo inovação, inclusão e sustentabilidade em todas as etapas.</p>
+    `,
+    identidade: `
+      <h3>Identidade Visual Acessível</h3>
+      <p>Desenvolvemos logotipos, paletas de cores e materiais gráficos com foco em acessibilidade. Garantimos contraste adequado, fontes legíveis e versões adaptadas para diferentes necessidades, tornando sua marca inclusiva e reconhecível.</p>
+    `,
+    sites: `
+      <h3>Adaptação de Sites</h3>
+      <p>Avaliamos e adaptamos seu site para atender às normas de acessibilidade digital (WCAG). Implementamos recursos como navegação por teclado, textos alternativos, contraste de cores e responsividade, melhorando a experiência de todos os usuários.</p>
+    `,
+    manual: `
+      <h3>Manual de Identidade Visual</h3>
+      <p>Criamos um guia completo com diretrizes para uso correto da marca: aplicações do logotipo, cores, tipografia, elementos gráficos e exemplos práticos. O manual garante consistência visual e facilita a comunicação da sua marca em todos os canais.</p>
+    `,
+    redes: `
+      <h3>Gerenciamento de Redes Sociais</h3>
+      <p>Planejamos, produzimos e publicamos conteúdos acessíveis e estratégicos. Monitoramos resultados, interagimos com o público e ajustamos as ações para fortalecer a presença digital da sua marca e ampliar seu alcance.</p>
+    `
+  };
+
+  // Abrir modal
+  document.querySelectorAll('.btn-mais-info').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const servico = this.getAttribute('data-servico');
+      document.getElementById('modal-text').innerHTML = servicosDetalhes[servico];
+      document.getElementById('modal-servico').style.display = 'flex';
+    });
+  });
+
+  // Fechar modal
+  document.getElementById('closeModal').onclick = function() {
+    document.getElementById('modal-servico').style.display = 'none';
+  };
+
+  // Fechar modal ao clicar fora do conteúdo
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal-servico');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
