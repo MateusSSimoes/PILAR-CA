@@ -13,6 +13,10 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -189,7 +193,8 @@ input:checked + .slider:before {
 }
 
 .btn {
-  background: #000000;
+  font-family: 'Lato', sans-serif;
+  background: #370303;
   color: #ffffff;
   padding: 12px 24px;
   border-radius: 30px;  
@@ -199,7 +204,7 @@ input:checked + .slider:before {
 }
 
 .btn:hover {
-  background:  #5a0f0f;
+  background:  #8b1f1f;
   color: #ffffff;
 }
 
@@ -223,6 +228,7 @@ input:checked + .slider:before {
   text-align: center;
   font-size: 28px;
   margin-top: 40px;
+  margin-bottom: 30px;
   color: rgb(0, 0, 0);
 }
 
@@ -525,12 +531,14 @@ input:checked + .slider:before {
 }
 
 .texto-servico h3 {
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     color: #007BFF;
     margin-bottom: 8px;
 }
 
 .texto-servico p {
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     color: #555;
     line-height: 1.5;
@@ -622,6 +630,7 @@ input:checked + .slider:before {
 }
 
 .contact-info h3 {
+  font-family: 'Lato', sans-serif;
   margin-top: 0;
   font-size: 1.4rem;
   margin-bottom: 20px;
@@ -629,12 +638,14 @@ input:checked + .slider:before {
 }
 
 .contact-info p {
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   margin: 10px 0;
   color: #555;
 }
 
 .contact-info i {
+  font-family: 'Lato', sans-serif;
   margin-right: 10px;
   color: #3498db;
 }
@@ -657,6 +668,7 @@ input:checked + .slider:before {
 }
 
 .contact-form label {
+  font-family: 'Lato', sans-serif;  
   display: flex;
   flex-direction: column;
   font-weight: 600;
@@ -870,13 +882,38 @@ body.dark-mode .section-title {
   color: #f0f0f0;
 }
 
+
+/* DARK MODE - NOSSA EQUIPE*/
+body.dark-mode .section-title-1 {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .team-desc {
+  color: #f0f0f0;
+}
+
 body.dark-mode .card {
   background-color: #121212;
   border: 1px solid #555;
   color: #eee;
 }
 
-body.dark-mode .card:hover {
+body.dark-mode .team-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #8b1f1f;
+  transition: color 0.3s ease;
+}
+body.dark-mode .team-card:hover .team-name {
+  color: #d11515;
+}
+
+body.dark-mode .team-card:hover .team-photo {
+  border-color: #d11515;
+}
+
+body.dark-mode .card:hover {  
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
@@ -928,7 +965,7 @@ body.dark-mode .servico-card:hover {
 }
 
 body.dark-mode .texto-servico h3 {
-    color: #a81111;
+    color: #8b1f1f;
 }
 
 body.dark-mode .texto-servico p {
