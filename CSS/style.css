@@ -97,7 +97,7 @@ header nav {
     position: absolute;
     top: 60px; /* ajuste de acordo com a altura do header */
     right: 10px;
-    padding: 50px;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
