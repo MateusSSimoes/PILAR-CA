@@ -85,7 +85,7 @@ header nav {
 
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 30px;
   background: none;
   border: none;
   cursor: pointer;
@@ -97,7 +97,7 @@ header nav {
 /* Mobile */
 @media (max-width: 768px) {
   .nav-links {
-    display: flex!important;
+    display:  !important;
     flex-direction: column;
     background-color: #f0f0f0;
     position: absolute;
@@ -107,11 +107,13 @@ header nav {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
+
 /*
   .nav-links.active {
-    display: flex;
+    display: flex;  
   }
 */
+
 .active{
   display: none!important;
 }
@@ -329,13 +331,21 @@ input:checked + .slider:before {
 /*EQUIPE*/
 
 /* Grid responsivo */
-.team-container {
+.team-container-team-group-1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+  gap: 40px;
   max-width: 1100px;
   margin: 0 auto;
- 
+}
+
+.team-container-team-group-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 682px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 /* Card */
@@ -353,7 +363,7 @@ input:checked + .slider:before {
 }
 .team-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.657);
 }
 
 /* Foto + borda animada */
@@ -544,6 +554,7 @@ input:checked + .slider:before {
 
 /* SERVIÇOS */
 .servicos-container {
+    margin-top: 250px;
     background-color: #e7d49e;
     padding: 60px 20px;
     text-align: center;
@@ -932,7 +943,7 @@ body.dark-mode .nav-links {
 body.dark-mode .nav-links a {
   margin-left: 24px;;
   font-weight: 500;
-  color: #f0f0f0;
+  color: #e7d49e;
   transition: color 0.3s;
 }
 
@@ -950,11 +961,11 @@ body.dark-mode nav a:hover {
 
 body.dark-mode .hero {
   background-color: #121212;
-  color: #f0f0f0;
+  color: #e7d49e;
 }
 
 body.dark-mode .btn {
-  background-color: white;
+  background-color: #e7d49e;
   color: black;
 }
 
@@ -972,17 +983,16 @@ body.dark-mode .bg-light {
 }
 
 body.dark-mode .section-title {
-  color: #f0f0f0;
+  color: #e7d49e;
 }
-
 
 /* DARK MODE - NOSSA EQUIPE*/
 body.dark-mode .section-title-1 {
-  color: rgb(255, 255, 255);
+  color: #e7d49e
 }
 
 body.dark-mode .team-desc {
-  color: #f0f0f0;
+  color: #e7d49e;
 }
 
 body.dark-mode .card {
@@ -1006,16 +1016,21 @@ body.dark-mode .team-card:hover .team-photo {
   border-color: #d11515;
 }
 
+body.dark-mode .team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px #5a0f0f;
+}
+
 body.dark-mode .card:hover {  
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 body.dark-mode .card h3 {
-  color: #f0f0f0;
+  color: #e7d49e;
 }
 
 body.dark-mode .about-text {
-  color: #ccc;
+  color: #e7d49e;
 }
 
 body.dark-mode .team-container {
@@ -1044,17 +1059,17 @@ body.dark-mode .servicos-container {
 }
 
 body.dark-mode .titulo-servicos {
-    color: #f0f0f0;
+    color: #e7d49e;
 }
 
 body.dark-mode .servico-card {
     background-color: #232323;
     color: #f0f0f0;
-    box-shadow: 0 6px 18px rgba(255,255,255,0.04);
+    box-shadow: 0 6px 18px rgba(255, 0, 0, 0.04);
 }
 
 body.dark-mode .servico-card:hover {
-    box-shadow: 0 10px 25px rgba(255,255,255,0.08);
+    box-shadow: 0 10px 25px #5a0f0f;
 }
 
 body.dark-mode .texto-servico h3 {
@@ -1062,12 +1077,12 @@ body.dark-mode .texto-servico h3 {
 }
 
 body.dark-mode .texto-servico p {
-    color: #cccccc;
+    color: #e7d49e;
 }
 
 body.dark-mode .modal-content {
     background: #232323;
-    color: #f0f0f0;
+    color: #e7d49e;
     box-shadow: 0 8px 32px rgba(0,0,0,0.6);
 }
 
@@ -1117,13 +1132,13 @@ body.dark-mode .contact-info h3 {
   margin-top: 0;
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #e7d49e;
 }
 
 body.dark-mode .contact-info p {
   font-size: 1rem;
   margin: 10px 0;
-  color: #cccccc;
+  color: #e7d49e;
 }
 
 body.dark-mode .contact-info i {
@@ -1151,7 +1166,7 @@ body.dark-mode .contact-form label {
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  color: #ffffff;
+  color: #e7d49e;
 }
 
 body.dark-mode .contact-form input,
@@ -1176,7 +1191,7 @@ body.dark-mode .contact-form textarea:focus {
 
 body.dark-mode .contact-form button {
   background: #5a0f0f;
-  color: white;
+  color: #e7d49e;
   padding: 12px 20px;
   border: none;
   font-size: 1rem;
@@ -1210,22 +1225,11 @@ body.dark-mode .form-success {
 
 /* VOLTAR AO TOPO MODO ESCURO */
 body.dark-mode #btnVoltarTopo { 
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none; /* começa escondido */
   background-color: #a81111;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 50px;
-  font-size: 16px;
-  cursor: pointer;
+  color: #e7d49e;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: opacity 0.3s ease;
-  z-index: 1000;
 }
-#btnVoltarTopo:hover {
+body.dark-mode #btnVoltarTopo:hover {
   background-color: #5a0f0f ;
 }
 
@@ -1240,11 +1244,11 @@ body.dark-mode .wave-container-footer svg {
 
 body.dark-mode footer {
   background-color: #5a0f0f;
-  color: #ccc;
+  color: #e7d49e;
 }
 
 body.dark-mode .footer a {
-  color: #bbb;
+  color: #e7d49e;
 }
 
 body.dark-mode .footer a:hover {
