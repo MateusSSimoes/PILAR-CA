@@ -76,15 +76,66 @@ header nav {
   margin-top: 45px;
 }
 
+/*RESPONSIVO - HEADER*/
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
 
-nav a {
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e7d49e;
+  margin-top: 32px; /* ajuste aqui conforme o quanto quiser mover */
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex!important;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 60px; /* ajuste de acordo com a altura do header */
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+/*
+  .nav-links.active {
+    display: flex;
+  }
+*/
+.active{
+  display: none!important;
+}
+  .menu-toggle {  
+    display: block;
+    top: 100px;
+  }
+}
+
+/* Desktop navigation */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 45px;
+  background-color: #370303;
+}
+
+.nav-links a {
   margin-left: 24px;;
   font-weight: 500;
   color: #e7d49e;
   transition: color 0.3s;;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #ffffff;
 }
 
@@ -95,7 +146,7 @@ nav a:hover {
   width: 60px;
   height: 32px;
   margin-left: 16px;
-  margin-top: 45px;
+  margin-top: 33px;
 }
 
 .switch input {
@@ -127,6 +178,13 @@ nav a:hover {
   background-color: white;
   transition: .4s;
   border-radius: 50%;
+}
+
+/* Responsivo (opcional) */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    transform: scale(0.9); /* ligeiramente menor no mobile */
+  }
 }
 
 /* Quando marcado, move o círculo */
@@ -194,7 +252,7 @@ input:checked + .slider:before {
 
 .btn {
   font-family: 'Lato', sans-serif;
-  background: #370303;
+  background: #5a0f0f;
   color: #ffffff;
   padding: 12px 24px;
   border-radius: 30px;  
@@ -204,7 +262,7 @@ input:checked + .slider:before {
 }
 
 .btn:hover {
-  background:  #8b1f1f;
+  background:  #a81111;
   color: #ffffff;
 }
 
@@ -533,7 +591,7 @@ input:checked + .slider:before {
 .texto-servico h3 {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    color: #007BFF;
+    color: #000000;
     margin-bottom: 8px;
 }
 
@@ -577,7 +635,7 @@ input:checked + .slider:before {
 .close-modal:hover { color: #222; }
 .btn-mais-info {
     margin-top: 1rem;
-    background: #0056b3;
+    background: #5a0f0f;
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -587,7 +645,7 @@ input:checked + .slider:before {
     transition: background 0.2s;
 }
 .btn-mais-info:hover {
-    background: #3949ab;
+    background: #a81111;
 }
 @media (max-width: 600px) {
     .modal-content { max-width: 95vw; }
@@ -693,7 +751,7 @@ input:checked + .slider:before {
 }
 
 .contact-form button {
-  background: #3498db;
+  background: #5a0f0f;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -708,7 +766,7 @@ input:checked + .slider:before {
 }
 
 .contact-form button:hover {
-  background: #2980b9;
+  background: #a81111;
 }
 
 .error-msg {
@@ -732,7 +790,7 @@ input:checked + .slider:before {
   bottom: 30px;
   right: 30px;
   display: none; /* começa escondido */
-  background-color: #007BFF;
+  background-color: #5a0f0f;
   color: white;
   border: none;
   padding: 12px 18px;
@@ -744,7 +802,7 @@ input:checked + .slider:before {
   z-index: 1000;
 }
 #btnVoltarTopo:hover {
-  background-color: #0056b3;
+  background-color: #a81111;
 }
 
 
@@ -845,6 +903,24 @@ body.dark-mode .wave-container-hero {
 body.dark-mode .wave-container-hero-2 {
   background-color: transparent;
   fill: #5a0f0f;
+}
+
+body.dark-mode .nav-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 45px;
+  background-color: #5a0f0f
+}
+
+body.dark-mode .nav-links a {
+  margin-left: 24px;;
+  font-weight: 500;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #e7d49e;
 }
 
 body.dark-mode nav a {

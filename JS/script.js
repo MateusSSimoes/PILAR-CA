@@ -172,3 +172,19 @@ btnVoltarTopo.addEventListener('click', () => {
       modal.style.display = 'none';
     }
   };
+
+//MENU HAMBURGUER 
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    btnToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+/*
+      if (navLinks.classList.contains('active')) {
+        btnToggle.setAttribute('aria-label', 'Fechar menu');
+      } else {
+        btnToggle.setAttribute('aria-label', 'Abrir menu');
+      }*/
+    });
+  });
