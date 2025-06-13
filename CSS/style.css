@@ -82,6 +82,7 @@ header nav {
   gap: 20px;
 }
 
+
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -782,6 +783,23 @@ input:checked + .slider:before {
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
+}
+
+/* MOBILE (até 768px) */
+@media (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Para garantir que o formulário fique abaixo do mapa */
+  .map-wrapper {
+    order: 1;  /* mapa fica em cima */
+  }
+  .contact-form {
+    order: 2;  /* formulário fica abaixo */
+  }
 }
 
 /* VOLTAR AO TOPO */
