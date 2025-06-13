@@ -785,20 +785,19 @@ input:checked + .slider:before {
   margin-top: 10px;
 }
 
-/* MOBILE (até 768px) */
 @media (max-width: 768px) {
   .contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
   }
 
-  /* Para garantir que o formulário fique abaixo do mapa */
   .map-wrapper {
-    order: 1;  /* mapa fica em cima */
+    order: 1 !important;
   }
+
   .contact-form {
-    order: 2;  /* formulário fica abaixo */
+    order: 2 !important;
   }
 }
 
