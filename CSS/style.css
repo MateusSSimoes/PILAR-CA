@@ -15,6 +15,7 @@ body {
 
 p {
   font-family: 'Lato', sans-serif;
+  text-align: justify;
 }
 
 a {
@@ -105,11 +106,12 @@ header nav {
   .nav-links.active {
     display: flex!important;  /* <-- mostra o menu ao clicar */
   }
-}
 
-.menu-toggle {  
-  display: block;
+  .menu-toggle {  
+  display: block!important;
   top: 100px;
+}
+  
 }
 
 /* Desktop navigation */
@@ -212,6 +214,7 @@ header nav {
 }
 
 .hero p {
+  text-align: justify;
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto 30px;
@@ -323,7 +326,7 @@ header nav {
   max-width: 800px;
   margin: 0 auto;
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
   color: #000000;
 }
 
@@ -414,7 +417,7 @@ header nav {
 /* Info */
 .team-info {
   width: 100%;
-  text-align: center;
+  text-align: justify;
   flex-grow: 1;
 }
 
