@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    font-size: 14px;
+}
+
+body {
+    background-color: #000000;
+    height: 100%; 
+}
+
+.container {
+   height: 100%;
+   max-width: 550px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+   color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.degrade {
+    background: linear-gradient(to right, #370303, #231305);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #9c9797;
+    font-weight: 300;
+}
+
+.logo {
+    border-radius: 90px;
+    zoom: 1.8;
+}
+
+/* Estilo dos Botões */
+section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link button {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+a.link i{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+a.link button:hover, footer a.btn-footer:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do Footer */
+footer {
+    margin: 30px;
+    text-align: center;
+}
+
+footer a.btn-footer {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
