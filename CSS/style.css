@@ -151,7 +151,7 @@ header nav {
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #f1c40f;
+  background-color: #e7d49e;
   border-radius: 34px;
   width: 100%;
   height: 100%;
@@ -187,7 +187,7 @@ header nav {
 
 /* Tema escuro */
 .switch input:checked + .slider {
-  background-color: #283746;
+  background-color: #121212;
 }
 
 .switch input:checked + .slider .sun {
@@ -199,6 +199,42 @@ header nav {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
+
+/*RESPONSIVO DO SWITCH*/
+/* -------- RESPONSIVIDADE PARA O SWITCH -------- */
+
+@media (max-width: 768px) {
+  .switch {
+    width: 100px;
+    height: 26px;
+  }
+
+  .slider {
+    font-size: 16px;
+    padding: 0 6px;
+  }
+
+  .slider .icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .switch {
+    width: 48px;
+    height: 22px;
+  }
+
+  .slider {
+    font-size: 14px;
+    padding: 0 4px;
+  }
+
+  .slider .icon {
+    font-size: 14px;
+  }
+}
+
 
 /* HERO */
 .hero {
@@ -469,6 +505,8 @@ header nav {
 
 /* Botão ver mais */
 .toggle-desc {
+    display: block;
+    margin: auto;
     background: #5a0f0f;
     color: #fff;
     border: none;
@@ -495,14 +533,15 @@ header nav {
 }
 
 .team-socials a {
-  color: #a81111;
+  font-family: 'Lato', sans-serif;
+  color: #370303;
   font-size: 1.5rem;
   position: relative;
   transition: color 0.3s ease;
   text-decoration: none;
 }
 .team-socials a:hover {
-  color: #370303;
+  color: #a81111  ;
 }
 
 /* Tooltip simples */
@@ -892,6 +931,25 @@ footer {
   font-size: 12px;
   color: #c0d3f5;
   margin-top: 30px;
+}
+
+/* Estilização personalizada do botão VLibras */
+[vw-access-button] {
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #0073e6 !important;
+  border-radius: 50% !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 9999 !important;
+  align-items: center;
+}
+
+/* Efeito hover suave */
+[vw-access-button]:hover {  
+  transform: scale(1.1);
+  background-color: #005bb5 !important;
 }
 
 /* Dark Mode Styles */
