@@ -146,11 +146,11 @@ btnVoltarTopo.addEventListener('click', () => {
 
 // ------------------- MODAL DE SERVIÇOS -------------------
 const servicosDetalhes = {
-  consultoria: `<h3>Consultoria Estratégica</h3><p>Oferecemos análise de mercado...</p>`,
-  identidade: `<h3>Identidade Visual Acessível</h3><p>Desenvolvemos logotipos...</p>`,
-  sites: `<h3>Adaptação de Sites</h3><p>Avaliamos e adaptamos seu site...</p>`,
-  manual: `<h3>Manual de Identidade Visual</h3><p>Criamos um guia completo...</p>`,
-  redes: `<h3>Gerenciamento de Redes Sociais</h3><p>Planejamos conteúdos acessíveis...</p>`
+  consultoria: `<h3>Consultoria Estratégica</h3><p>Oferecemos análise de mercado detalhada para identificar oportunidades e definir estratégias eficazes que potencializam o crescimento da sua marca, focando sempre em acessibilidade e inclusão.</p>`,
+  identidade: `<h3>Identidade Visual Acessível</h3><p>Desenvolvemos logotipos e materiais visuais que respeitam as normas de acessibilidade, garantindo que sua marca seja reconhecida e compreendida por todos os públicos, inclusive pessoas com deficiência visual.</p>`,
+  sites: `<h3>Adaptação de Sites</h3><p>Avaliamos e adaptamos seu site para torná-lo totalmente acessível, melhorando a navegação, a leitura de conteúdos e a compatibilidade com tecnologias assistivas, garantindo uma experiência inclusiva para todos os usuários.</p>`,
+  manual: `<h3>Manual de Identidade Visual</h3><p>Criamos um guia completo com normas e orientações para o uso correto da identidade visual, assegurando consistência e acessibilidade em todas as aplicações da marca.</p>`,
+  redes: `<h3>Gerenciamento de Redes Sociais</h3><p>Planejamos conteúdos acessíveis e inclusivos para suas redes sociais, fortalecendo o engajamento e ampliando o alcance da sua marca para públicos diversos.</p>`
 };
 
 document.querySelectorAll('.btn-mais-info').forEach(btn => {

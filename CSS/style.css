@@ -458,6 +458,7 @@ header nav {
 }
 
 .team-name {
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 4px;
@@ -469,6 +470,7 @@ header nav {
 }
 
 .team-role {
+  text-align: center;
   font-size: 1rem;
   font-weight: 600;
   color: #7f8c8d;
@@ -673,6 +675,7 @@ header nav {
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     animation: modalFadeIn 0.2s;
 }
+
 @keyframes modalFadeIn {
     from { transform: scale(0.95); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -745,7 +748,7 @@ header nav {
   margin-top: 0;
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #34495e;
+  color: #121212;
 }
 
 .contact-info p {
@@ -756,9 +759,8 @@ header nav {
 }
 
 .contact-info i {
-  font-family: 'Lato', sans-serif;
   margin-right: 10px;
-  color: #3498db;
+  color: #5a0f0f;
 }
 
 .map-wrapper {
@@ -783,7 +785,7 @@ header nav {
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  color: #2c3e50;
+  color: #121212;
 }
 
 .contact-form input,
@@ -1203,7 +1205,7 @@ body.dark-mode .contact-info p {
 
 body.dark-mode .contact-info i {
   margin-right: 10px;
-  color: #3498db;
+  color: #5a0f0f;
 }
 
 body.dark-mode .map-wrapper {
