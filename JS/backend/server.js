@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -18,13 +20,14 @@ app.post('/send-email', async (req, res) => {
     return res.status(400).json({ error: 'Nome, email e mensagem são obrigatórios.' });
   }
 
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'pilar.consultoria.assessoria@gmail.com',
-      pass: 'nmszyvqhortdawdr',
-    },
-  });
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+
 
   const mailOptions = {
     from: email,
