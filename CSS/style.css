@@ -70,12 +70,52 @@ header nav {
   transition: 0.3s ease-out;
   transition-delay: calc((1 - var(--hov)) * 0.15s), 0s;
   transition-property: grid-template-columns, background-color;
-  margin-top: 43px; /* ajuste de acordo com a altura do header */
+}
+
+/* Botão escondido no desktop */
+.fancy-button {
+  margin-top: 0;
+}
+
+.acesse-links {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .fancy-button {
+    display: inline-grid; /* mostra normalmente no desktop */
+  }
+}
+
+/* No mobile: botão dentro do menu */
+@media (max-width: 768px) {
+  /* botão fica dentro do menu */
+  .fancy-button {
+    display: none;
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+    text-align: center;
+    background: #e7d49e;
+    color: #121212;
+    padding: 0.6em 1.2em;
+    border-radius: 2em;
+  }
+
+  /* Se o botão estiver fora do nav-links, esconda no mobile */
+  header > .fancy-button {
+    display: none;
+  }
+
+  .acesse-links {
+  display: block; /* mostra no mobile */
+}
+
 }
 
 .garamond-text {
-  font-family: "Garamond", serif;
+  font-family: 'Times New Roman';
   font-size: 20px;
+
 }
 
 .fancy-button::before {
@@ -631,8 +671,6 @@ header nav {
   .photo-border {
     width: 126px;
     height: 126px;
-    top: -6px;
-    left: -6px;
   }
   .team-name {
     font-size: 1.3rem;
@@ -643,7 +681,9 @@ header nav {
   .team-socials a {
     font-size: 1.3rem;
   }
+
 }
+
 
 /* SERVIÇOS */
 .servicos-container {
