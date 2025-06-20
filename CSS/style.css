@@ -52,6 +52,55 @@ header nav {
   margin-top: 45px;
 }
 
+/*BOTÃO*/
+.fancy-button {
+  --hov: 0;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: calc(0.375em + var(--hov) * 1em) 1fr;
+  align-items: center;
+  border: none;
+  padding: 0.18em 0.8em;
+  border-radius: 2em;
+  background: color-mix(in hsl, #e7d49e calc(var(--hov) * 100%), #e7d49e);
+  color: #121212;
+  font: 700 1.2em/1.375 "Ubuntu", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  transition-delay: calc((1 - var(--hov)) * 0.15s), 0s;
+  transition-property: grid-template-columns, background-color;
+  margin-top: 43px; /* ajuste de acordo com a altura do header */
+}
+
+.garamond-text {
+  font-family: "Garamond", serif;
+  font-size: 20px;
+}
+
+.fancy-button::before {
+  content: attr(data-ico);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #0e0a0e;
+  color: hsla(0, 0%, 100%, var(--hov));
+  font-weight: 100;
+  text-indent: calc((var(--hov) - 1) * 1em);
+  clip-path: circle(closest-side);
+  transition: inherit;
+  transition-delay: calc(var(--hov) * 0.15s);
+  transition-property: color, text-indent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fancy-button:is(:hover, :focus) {
+  --hov: 1;
+}
+
+
 .wave-container {
   background-color: transparent;
   position: fixed;         /* Tira absolute */
@@ -976,6 +1025,21 @@ body.dark-mode .header {
 
 body.dark-mode header nav {
   margin-top: 45px; /* mantido */
+}
+
+/*BOTÃO*/
+body.dark-mode .fancy-button {
+  background: color-mix(in hsl, #121212 calc(var(--hov) * 100%), #121212);
+  color: #121212;
+}
+
+body.dark-mode .garamond-text {
+  color: #e7d49e;
+}
+
+body.dark-mode .fancy-button::before {
+  background: #e7d49e;
+  color: hsla(0, 0%, 100%, var(--hov),);
 }
 
 body.dark-mode .wave-container {
