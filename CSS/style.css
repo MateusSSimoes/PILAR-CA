@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
   }
+  
 
   p {
     font-family: 'Lato', sans-serif;
@@ -166,12 +167,12 @@
   }
 
   /* RESPONSIVIDADE PARA WAVES */
-@media (max-width: 782px) {
+@media (max-width: 860px) {
   .wave-container svg,
   .wave-container-hero svg,
   .wave-container-hero-2 svg,
   .wave-container-footer svg {
-    width: 834px;
+    width: 860px;
   }
 }
 
