@@ -111,20 +111,6 @@
 
   }
 
-   @media (max-width: 860px) {
-   header {
-    width: 120%;
-   }
-  
-   footer 
-   {
-    width: 120%;
-   }
-
-  .waves{
-    width: 120%;
-   }
-  }
 
   .garamond-text {
     font-family: 'Times New Roman';
